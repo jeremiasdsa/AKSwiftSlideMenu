@@ -15,6 +15,9 @@
 		753A55E51BB0755100254F27 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A55E41BB0755100254F27 /* BaseViewController.swift */; };
 		C6EEF9F61CB7E2AD00A3DC6D /* PlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEF9F51CB7E2AD00A3DC6D /* PlayVC.swift */; };
 		C6EEF9F81CB7E4E000A3DC6D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEF9F71CB7E4E000A3DC6D /* HomeVC.swift */; };
+		CEC70E37209E84BB00276B17 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC70E36209E84BB00276B17 /* Custom.swift */; };
+		CEC70E39209E851200276B17 /* Custom1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC70E38209E851200276B17 /* Custom1.swift */; };
+		CEC70E3B209E852400276B17 /* Custom2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC70E3A209E852400276B17 /* Custom2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		753A55E41BB0755100254F27 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C6EEF9F51CB7E2AD00A3DC6D /* PlayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayVC.swift; sourceTree = "<group>"; };
 		C6EEF9F71CB7E4E000A3DC6D /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		CEC70E36209E84BB00276B17 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
+		CEC70E38209E851200276B17 /* Custom1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom1.swift; sourceTree = "<group>"; };
+		CEC70E3A209E852400276B17 /* Custom2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,9 @@
 				753A55E41BB0755100254F27 /* BaseViewController.swift */,
 				753A55E21BB0753B00254F27 /* MenuViewController.swift */,
 				C6EEF9F51CB7E2AD00A3DC6D /* PlayVC.swift */,
+				CEC70E36209E84BB00276B17 /* Custom.swift */,
+				CEC70E38209E851200276B17 /* Custom1.swift */,
+				CEC70E3A209E852400276B17 /* Custom2.swift */,
 				753A55C61BB073E900254F27 /* Main.storyboard */,
 				753A55C91BB073E900254F27 /* Images.xcassets */,
 				753A55CB1BB073E900254F27 /* LaunchScreen.xib */,
@@ -156,7 +165,10 @@
 			files = (
 				753A55E51BB0755100254F27 /* BaseViewController.swift in Sources */,
 				C6EEF9F61CB7E2AD00A3DC6D /* PlayVC.swift in Sources */,
+				CEC70E39209E851200276B17 /* Custom1.swift in Sources */,
+				CEC70E37209E84BB00276B17 /* Custom.swift in Sources */,
 				C6EEF9F81CB7E4E000A3DC6D /* HomeVC.swift in Sources */,
+				CEC70E3B209E852400276B17 /* Custom2.swift in Sources */,
 				753A55E31BB0753B00254F27 /* MenuViewController.swift in Sources */,
 				753A55C31BB073E900254F27 /* AppDelegate.swift in Sources */,
 			);
@@ -294,6 +306,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -308,6 +321,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

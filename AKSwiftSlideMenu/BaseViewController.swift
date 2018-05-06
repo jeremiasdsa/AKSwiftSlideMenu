@@ -34,6 +34,10 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
             print("Play\n", terminator: "")
             
             self.openViewControllerBasedOnIdentifier("PlayVC")
+        case 2:
+            print("Play\n", terminator: "")
+            
+            self.openViewControllerBasedOnIdentifier("Custom")
             
             break
         default:
@@ -67,12 +71,12 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         
         UIGraphicsBeginImageContextWithOptions(CGSize(width: 30, height: 22), false, 0.0)
         
-        UIColor.black.setFill()
+        UIColor.green.setFill()
         UIBezierPath(rect: CGRect(x: 0, y: 3, width: 30, height: 1)).fill()
         UIBezierPath(rect: CGRect(x: 0, y: 10, width: 30, height: 1)).fill()
         UIBezierPath(rect: CGRect(x: 0, y: 17, width: 30, height: 1)).fill()
         
-        UIColor.white.setFill()
+        UIColor.red.setFill()
         UIBezierPath(rect: CGRect(x: 0, y: 4, width: 30, height: 1)).fill()
         UIBezierPath(rect: CGRect(x: 0, y: 11,  width: 30, height: 1)).fill()
         UIBezierPath(rect: CGRect(x: 0, y: 18, width: 30, height: 1)).fill()
@@ -113,7 +117,8 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         let menuVC : MenuViewController = self.storyboard!.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
         menuVC.btnMenu = sender
         menuVC.delegate = self
-        self.view.addSubview(menuVC.view)
+        //self.view.addSubview(menuVC.view)
+        UIApplication.shared.delegate?.window??.addSubview(menuVC.view)
         self.addChildViewController(menuVC)
         menuVC.view.layoutIfNeeded()
         
